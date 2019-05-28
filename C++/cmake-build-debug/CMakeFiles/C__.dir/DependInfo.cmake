@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/FPC/Develop/OJ/C++/1051.cpp" "/Users/FPC/Develop/OJ/C++/cmake-build-debug/CMakeFiles/C__.dir/1051.cpp.o"
   "/Users/FPC/Develop/OJ/C++/938.cpp" "/Users/FPC/Develop/OJ/C++/cmake-build-debug/CMakeFiles/C__.dir/938.cpp.o"
   "/Users/FPC/Develop/OJ/C++/main.cpp" "/Users/FPC/Develop/OJ/C++/cmake-build-debug/CMakeFiles/C__.dir/main.cpp.o"
   )
