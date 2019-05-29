@@ -150,6 +150,33 @@ C__/fast:
 	$(MAKE) -f CMakeFiles/C__.dir/build.make CMakeFiles/C__.dir/1051.cpp.s
 .PHONY : 1051.cpp.s
 
+2.o: 2.cpp.o
+
+.PHONY : 2.o
+
+# target to build an object file
+2.cpp.o:
+	$(MAKE) -f CMakeFiles/C__.dir/build.make CMakeFiles/C__.dir/2.cpp.o
+.PHONY : 2.cpp.o
+
+2.i: 2.cpp.i
+
+.PHONY : 2.i
+
+# target to preprocess a source file
+2.cpp.i:
+	$(MAKE) -f CMakeFiles/C__.dir/build.make CMakeFiles/C__.dir/2.cpp.i
+.PHONY : 2.cpp.i
+
+2.s: 2.cpp.s
+
+.PHONY : 2.s
+
+# target to generate assembly for a file
+2.cpp.s:
+	$(MAKE) -f CMakeFiles/C__.dir/build.make CMakeFiles/C__.dir/2.cpp.s
+.PHONY : 2.cpp.s
+
 938.o: 938.cpp.o
 
 .PHONY : 938.o
@@ -216,6 +243,9 @@ help:
 	@echo "... 1051.o"
 	@echo "... 1051.i"
 	@echo "... 1051.s"
+	@echo "... 2.o"
+	@echo "... 2.i"
+	@echo "... 2.s"
 	@echo "... 938.o"
 	@echo "... 938.i"
 	@echo "... 938.s"
