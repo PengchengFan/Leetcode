@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/C__.dir/938.cpp.o"
   "CMakeFiles/C__.dir/1051.cpp.o"
   "CMakeFiles/C__.dir/2.cpp.o"
+  "CMakeFiles/C__.dir/1038.cpp.o"
   "C__.pdb"
   "C__"
 )
