@@ -9,14 +9,17 @@ class Solution:
             ind3 = length - 1
             while ind2 != ind3:
                 if nums[ind1] + nums[ind2] + nums[ind3] == 0:
-                    if [nums[ind1], nums[ind2],nums[ind3]] not in ans:
-                        ans.append([nums[ind1], nums[ind2],nums[ind3]])
+                    ans.append([nums[ind1], nums[ind2],nums[ind3]])
                     ind2 += 1
+                    while nums[ind2] == nums[ind2-1]:
+                        ind2 += 1
                 elif nums[ind1] + nums[ind2] + nums[ind3] < 0:
                     ind2 += 1
                 elif nums[ind1] + nums[ind2] + nums[ind3] > 0:
                     ind3 -= 1
             ind1 += 1
+            while nums[ind1] == nums[ind1-1]:
+                ind1 += 1
         return ans
 
 S = Solution()
