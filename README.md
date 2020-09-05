@@ -26,8 +26,11 @@ Dynamic programming problems can be solved with three ways:
 ### Medium problems
 
 [62. Unique Paths](https://leetcode.com/problems/unique-paths/)
+
 [63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
+
 [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
+
 [91. Decode Ways](https://leetcode.com/problems/decode-ways/)
 
 ## Tree
