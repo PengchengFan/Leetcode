@@ -1,19 +1,8 @@
 class Solution:
     def numDecodings(self, s: str) -> int:
-        def _numDecodings(s):
-            if len(s) == 0:
-                return 1
-            ch1, ch2 = int(s[0]), 7
-            
-            if len(s) > 1:
-                ch2 = int(s[1])
-            
-            if ch1 <= 2 and ch2 <= 6:
-                return _numDecodings(s[1:]) + _numDecodings(s[2:])
-            return _numDecodings(s[1:])
+        dp = [1] * (len(s) + 1)             # DP Array of size (n+1) initialized to 1
+        if s[0] == "0": dp[1] = 0           # Check s[0] is valid encoding
 
-        count = _numDecodings(s)
-        return count
-
-s = Solution()
-print(s.numDecodings("0"))
+        for i in range(2, len(s) + 1):
+            dp[i] = (dp[i - 1] if 1 <= int(s[i - 1]) <= 26 else 0) + (dp[i - 2] if 10 <= int(s[i - 2] + s[i - 1]) <= 26 else 0)
+        return dp[-1]
